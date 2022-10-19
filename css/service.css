@@ -41,15 +41,17 @@
     /* border: 2px solid #132e7a; */
     border-radius: 12px;
     box-shadow: #000;
+    width: 20rem;
+    height: 30rem;
   }
   
   .flip-card-front {
-    background-image: linear-gradient(grey, rgb(75, 71, 71));
+    background-image: linear-gradient(rgb(218, 216, 216), rgb(105, 105, 105));
     color: black;
   }
   
   .flip-card-back {
-    background-image: linear-gradient(grey, rgb(75, 71, 71));
+    background-image: linear-gradient(rgb(218, 216, 216), rgb(105, 105, 105));
     color: white;
     transform: rotateY(180deg);
   }
@@ -70,48 +72,15 @@
 .flip-card-front h2 {
   margin-top: 10px;
 }
+
 .mySlides {
     display:flexbox;
     align-items: center;
     justify-content: center;
     border-radius: 5px;
-    width: 500px;
+    width: 20rem;
+    height: 30rem;
 }
-/* .slides-holder {
-    align-items: center;
-    justify-content: center;
-} */
-
-.slider{
-    /* width: 20rem;
-    height: 30rem; */
-    border-radius: 10px;
-    overflow: hidden;
-  }
-  
-  .slides{
-    /* width: 500%;
-    height: 500px; */
-    display: flex;
-  }
-  
-  .slides input{
-    display: none;
-  }
-  
-  .slide{
-    width: 20%;
-    transition: 4s;
-  }
-  
-  .slide img{
-    width: 20rem;
-    height: 30rem;
-  }
-  .mySlides{
-    width: 20rem;
-    height: 30rem;
-  }
   
   /*css for manual slide navigation*/
   
@@ -192,12 +161,28 @@
   #radio4:checked ~ .navigation-auto .auto-btn4{
     background: #40D3DC;
   }
-@media screen and (max-width:600px){
-    #col {
-        width: 100%;
-        align-items: center;
-        padding-left: 100px;
-        display: block;
-        margin-bottom: 12rem;
+@media screen and (max-width:320px){
+  section {
+    overflow: hidden;
+  }
+  .flip-card-front, .flip-card-back {
+    width: 15rem;
+    height: 25rem;
+  }
+  .flip-card-front img{
+    height: 150px;
+    width: 150px;
+  }
+  #col {
+      align-items: center;
+      display: block;
+      margin-bottom: 19rem;
+      height: 15rem;
+      width: 10rem;   
+    }
+    .flip-card-back img {
+      width: 10rem;
+      height: 15rem;
     }
 }
+
