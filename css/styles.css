@@ -608,8 +608,8 @@ progress {
 }
 #myimage{
   display: block;
-  width: 128px;
-  height: 128px;
+  width: 200px;
+  height: 200px;
   margin: 0 auto 30px;
   border-radius: 50%;
   background-color: rgb(59, 59, 59);
@@ -750,8 +750,9 @@ progress {
 /* About Animation */
 /* services */
 #services {
-  background-image: linear-gradient(#808080, black);
+  /* background-image: linear-gradient(#808080, black); */
 }
+
 
 .figure {
   display: inline-block;
@@ -812,8 +813,8 @@ progress {
   display: flex;
   flex-wrap: wrap;
   margin-top: calc(-1 * var(--bs-gutter-y));
-  margin-right: calc(-0.5 * var(--bs-gutter-x));
-  margin-left: calc(-0.5 * var(--bs-gutter-x));
+  /* margin-right: calc(-0.5 * var(--bs-gutter-x)); */
+  /* margin-left: calc(-0.5 * var(--bs-gutter-x)); */
 }
 .row > * {
   flex-shrink: 0;

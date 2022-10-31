@@ -1,188 +1,272 @@
-.flip-card-front h2 {
-    font-weight: bolder;
+#services {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 35rem;
+  padding: 15rem 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/img/ocean-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
 }
+#proj-section{
+  margin-bottom: 50px;
+}
+.flip-card-front h2 {
+  font-weight: bolder;
+}
+
 .flip-card-front p {
-    text-align: left;
-    font-weight: 600;
-    color: #dbd4d4;
-    padding-left: 10px;
-    padding-right: 5px;
-    
+  text-align: left;
+  font-weight: 600;
+  color: white;
+  padding-left: 10px;
+  padding-right: 5px;
+
 
 }
+
 .flip-card {
-    background-color: transparent;
-    /* width: 300px;
-    height: 300px; */
-    perspective: 1000px;
-    margin-bottom: 32rem;
-  }
-  
-  .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 2s;
-    transform-style: preserve-3d;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  }
-  
-  .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-  }
-  
-  .flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    /* border: 2px solid #132e7a; */
-    border-radius: 12px;
-    box-shadow: #000;
-    width: 20rem;
-    height: 30rem;
-  }
-  
-  .flip-card-front {
-    background-image: linear-gradient(rgb(218, 216, 216), rgb(105, 105, 105));
-    color: black;
-  }
-  
-  .flip-card-back {
-    background-image: linear-gradient(rgb(218, 216, 216), rgb(105, 105, 105));
-    color: white;
-    transform: rotateY(180deg);
-  }
-  .flip-card-back p{
-    margin-top: 20px;
-    font-size: larger;
-  }
+  background-color: transparent;
+  perspective: 1000px;
+  margin-bottom: 32rem;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 3s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  /* border: 2px solid #132e7a; */
+  border-radius: 12px;
+  box-shadow: #000;
+  width: 20rem;
+  height: 30rem;
+}
+
+.flip-card-front {
+  background: rgba(0, 0, 0, 0.5);
+  /* background-image: linear-gradient(rgb(218, 216, 216), rgb(105, 105, 105)); */
+  color: white;
+}
+
+.flip-card-front p {
+  margin: 20px;
+}
+
+.flip-card-back {
+  background: black;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.flip-card-back p {
+  margin-top: 20px;
+  font-size: larger;
+}
+
 .flip-card-front img {
-    display: block;
-    width: 200px;
-    height: 200px;
-    margin: 0 auto 30px;
-    border-radius: 2%;
-    background-color: rgb(59, 59, 59);
-    /* border: 5px solid rgb(88, 85, 85); */
+  display: block;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 30px;
+  border-radius: 2%;
+  background-color: rgb(59, 59, 59);
+  /* border: 5px solid rgb(88, 85, 85); */
   object-fit: cover;
 }
+
 .flip-card-front h2 {
   margin-top: 10px;
 }
 
 .mySlides {
-    display:flexbox;
-    align-items: center;
-    justify-content: center;
-    border-radius: 5px;
-    width: 20rem;
-    height: 30rem;
+  display: flexbox;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  width: 20rem;
+  height: 30rem;
 }
-  
-  /*css for manual slide navigation*/
-  
-  .navigation-manual{
-    position: absolute;
-    width: 5rem;
-    margin-top: -40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .manual-btn{
-    border: 2px solid #40D3DC;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
-  }
-  
-  .manual-btn:not(:last-child){
-    margin-right: 40px;
-  }
-  
-  .manual-btn:hover{
-    background: #40D3DC;
-  }
-  
-  #radio1:checked ~ .first{
-    margin-left: 0;
-  }
-  
-  #radio2:checked ~ .first{
-    margin-left: -20%;
-  }
-  
-  #radio3:checked ~ .first{
-    margin-left: -40%;
-  }
-  
-  #radio4:checked ~ .first{
-    margin-left: -60%;
-  }
-  
-  /*css for automatic navigation*/
-  
-  .navigation-auto{
-    position: absolute;
-    display: flex;
-    width: 800px;
-    justify-content: center;
-    margin-top: 460px;
-  }
-  
-  .navigation-auto div{
-    border: 2px solid #40D3DC;
-    padding: 5px;
-    border-radius: 10px;
-    transition: 1s;
-  }
-  
-  .navigation-auto div:not(:last-child){
-    margin-right: 40px;
-  }
-  
-  #radio1:checked ~ .navigation-auto .auto-btn1{
-    background: #40D3DC;
-  }
-  
-  #radio2:checked ~ .navigation-auto .auto-btn2{
-    background: #40D3DC;
-  }
-  
-  #radio3:checked ~ .navigation-auto .auto-btn3{
-    background: #40D3DC;
-  }
-  
-  #radio4:checked ~ .navigation-auto .auto-btn4{
-    background: #40D3DC;
-  }
-@media screen and (max-width:320px){
+
+/*css for manual slide navigation*/
+
+.navigation-manual {
+  position: absolute;
+  width: 5rem;
+  margin-top: -40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.manual-btn {
+  border: 2px solid #40D3DC;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+  margin-right: 40px;
+}
+
+.manual-btn:hover {
+  background: #40D3DC;
+}
+
+#radio1:checked~.first {
+  margin-left: 0;
+}
+
+#radio2:checked~.first {
+  margin-left: -20%;
+}
+
+#radio3:checked~.first {
+  margin-left: -40%;
+}
+
+#radio4:checked~.first {
+  margin-left: -60%;
+}
+
+/*css for automatic navigation*/
+
+.navigation-auto {
+  position: absolute;
+  display: flex;
+  width: 800px;
+  justify-content: center;
+  margin-top: 460px;
+}
+
+.navigation-auto div {
+  border: 2px solid #40D3DC;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.navigation-auto div:not(:last-child) {
+  margin-right: 40px;
+}
+
+#radio1:checked~.navigation-auto .auto-btn1 {
+  background: #40D3DC;
+}
+
+#radio2:checked~.navigation-auto .auto-btn2 {
+  background: #40D3DC;
+}
+
+#radio3:checked~.navigation-auto .auto-btn3 {
+  background: #40D3DC;
+}
+
+#radio4:checked~.navigation-auto .auto-btn4 {
+  background: #40D3DC;
+}
+
+#form-contact {
+  display: block;
+  justify-content: center;
+  padding-left: 130px;
+}
+
+#emailAddress {
+  width: 400px;
+}
+
+#message {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 400px;
+  height: 200px;
+}
+
+#submitButton {
+  width: 200px;
+  height: 50px;
+  margin-right: 100px;
+}
+
+@media screen and (max-width:320px) {
   section {
     overflow: hidden;
   }
-  .flip-card-front, .flip-card-back {
+
+  .flip-card-front,
+  .flip-card-back {
     width: 15rem;
     height: 25rem;
   }
-  .flip-card-front img{
+
+  .flip-card-front img {
     height: 150px;
     width: 150px;
   }
+
+  .flip-card-back {
+    margin-bottom: 10rem;
+    margin-right: 20rem;
+  }
+
   #col {
-      align-items: center;
-      display: block;
-      margin-bottom: 10rem;
-      height: 15rem;
-      width: 10rem;   
-    }
-    .flip-card-back img {
-      width: 10rem;
-      height: 15rem;
-    }
+    align-items: center;
+    display: block;
+    margin-bottom: 10rem;
+    height: 15rem;
+    width: 10rem;
+  }
+
+  .flip-card-back img {
+    width: 10rem;
+    height: 15rem;
+  }
+
+  #form-contact {
+    /* display: block; */
+    /* justify-content: center; */
+    /* padding-left: 130px; */
+    margin-right: 100px;
+  }
+
+  #emailAddress {
+    /* width: 100px; */
+    width: 100%;
+  }
+
+  #message {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 400px;
+    height: 200px;
+  }
+
+  #submitButton {
+    width: 200px;
+    height: 50px;
+    margin-right: 100px;
+  }
+
 }
 
