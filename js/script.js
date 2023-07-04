@@ -1,4 +1,4 @@
-var countDownDate = new Date("July 5, 2023 16:37:52").getTime();
+var countDownDate = new Date("July 7, 2023 16:37:52").getTime();
 
 var myfunc = setInterval(function() {
 
